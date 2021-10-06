@@ -22,11 +22,11 @@ const substitutionModule = (function () {
     //check for unique chars in alphabet param and add to cipher array
     for (let i = 0; i < alphabet.length; i++){
           if (cipher.includes(alphabet[i])){
+            i++
             return false
           } else {
             cipher.push(alphabet[i])
           }
-      i++
     }
 
     
